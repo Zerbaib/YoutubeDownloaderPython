@@ -22,7 +22,7 @@ while True:
         case other:
             print("Bad format")
             continue
-    print("Download is starting... Please wait")
+    print("Download is starting ... Please wait")
     downloader.download(filename=filename)
     break
 
