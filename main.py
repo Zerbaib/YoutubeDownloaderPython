@@ -3,13 +3,13 @@ from pytube import YouTube
 
 link = input("Set our video link:\n")
 yt = YouTube(link)
+filename = "YTB"
 
 def mp3():
     return yt.streams.filter(file_extension='mp3').get_highest_resolution()
 def mp4():
     return yt.streams.filter(file_extension='mp4').get_highest_resolution()
-    
-filename = "YTB"
+
 while True:
     format = input("What format you want: (1 - mp3) (2 - mp4)\n")
     match format:
